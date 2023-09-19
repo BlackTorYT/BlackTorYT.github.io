@@ -1,14 +1,28 @@
-.container {
-  margin: 0px 310px;
-}
 
  body {
   margin: 0px;
-  overflow-x: hidden
+  /* overflow-x: hidden */
 } 
 
 .logo {
   margin-top: 20px;
+}
+
+.header {
+  height: 690px;
+  display: inline-block;
+  display: flex;
+  width: 1870px;
+}
+
+.header-left {
+  width: 1295px;
+  margin: 0px 310px;
+}
+
+.header-right {
+  width: 693px;
+  position: relative;
 }
 
 .logo-first {
@@ -30,25 +44,27 @@
 }
 
 .svg-background {
-  position: absolute; 
-  right: 0; 
-  top: 0;
+  margin-left: -240px;
+  
+}
+
+.imgs-main {
+  position: relative;
 }
 
 .ottoman-img {
   width: 468px;
   height: 312px;
-  position: absolute;
-  right: 226px; 
-  top: 118px;
+  position: relative;
+  bottom: 770px;
 }
 
 .bed-img {
   width: 841px;
   height: 560px;
   position: absolute;
-  top: 236px;
-  right: 232px;
+  bottom: 400px;
+  right: 240px;
 }
 
 .header-subtitle {
@@ -95,7 +111,6 @@
 
 .order {
   display: inline-block;
-
 }
 
 .button {
@@ -184,10 +199,11 @@ del {
 
 .why {
   background-image: url(img/background-second.png);
-  height: 70vh;
+  height: 771px;
   background-repeat: no-repeat;
   margin-top: 200px;
 }
+
 
 .information-container {
   display: flex;
@@ -211,7 +227,6 @@ del {
 }
 
 .watch {
-  /* position: relative; */
   color:#fff;
   font-family: Ubuntu;
   font-size: 24px;
@@ -645,7 +660,7 @@ hr {
 }
 
 .footer {
-  width: 1860px;
+  width: 1870px;
   height: 270px;
   background-color: #2B2B37;
   margin: -8px;
