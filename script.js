@@ -7,9 +7,6 @@ const totalMonthElement = document.querySelector('#total-months')
 const totalYearElement = document.querySelector('#total-years')
 
 var date = new Date();
-// alert(date.getFullYear());
-// alert(date.getMonth());
-// alert(date.getDate());
 const form = document.getElementById('add-form');
 
 parseInt(""); ///строка->число
@@ -152,17 +149,16 @@ function validation(form) {
       }
     }
 
-    if (input.dataset.daysMonth) {
-      removeError(input)
+    // if (input.dataset.daysMonth) {
+    //   removeError(input)
 
-      if (monthsInput.value == 4,6,9,11 && input.value > 30 || 
-        monthsInput.value == 2 && input.value > 29 ||
-        input.value < 1 ) {
-        console.log('Ошибка поля год');
-        createError(input, `Неверное кол-во дней`)
-        result = false
-      }
-    }
+    //   if (monthsInput.value == 4,6,9,11 && input.value > 30 
+    //     ) {
+    //     console.log('Ошибка поля год');
+    //     createError(input, `Неверное кол-во дней`)
+    //     result = false
+    //   }
+    // }
     
 
   }
