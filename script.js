@@ -126,7 +126,7 @@ function validation(form) {
       removeError(input)
 
       if (input.value > 31 || input.value < 1) {
-        console.log('Ошибка поля');
+        console.log('Ошибка поля день');
         createError(input, `Укажите от 1 до ${input.dataset.maxDays}`)
         result = false
       }
@@ -136,7 +136,7 @@ function validation(form) {
       removeError(input)
 
       if (input.value > 12 || input.value < 1) {
-        console.log('Ошибка поля');
+        console.log('Ошибка поля месяц');
         createError(input, `Укажите от 1 до ${input.dataset.maxMonths}`)
         result = false
       }
@@ -145,18 +145,26 @@ function validation(form) {
     if (input.dataset.maxYears) {
       removeError(input)
 
-      if (input.value > 2023 || input.value < 1) {
-        console.log('Ошибка поля');
+      if (input.value > todayYear || input.value < 1) {
+        console.log('Ошибка поля год');
         createError(input, `Укажите от 1 до ${todayYear}`)
         result = false
       }
     }
+
+    if (input.dataset.daysMonth) {
+      removeError(input)
+
+      if (monthsInput.value == 4,6,9,11 && input.value > 30 || 
+        monthsInput.value == 2 && input.value > 29 ||
+        input.value < 1 ) {
+        console.log('Ошибка поля год');
+        createError(input, `Неверное кол-во дней`)
+        result = false
+      }
+    }
     
-    // if (input.value == "") {
-    //   console.log('Ошибка поля');
-    //   createError(input, 'Поле не заполнено')
-    //   result = false
-    // }
+
   }
   return result
 }
