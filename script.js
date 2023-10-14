@@ -10,13 +10,13 @@ var date = new Date();
 // alert(date.getFullYear());
 // alert(date.getMonth());
 // alert(date.getDate());
-
+const form = document.getElementById('add-form');
 
 parseInt(""); ///строка->число
 
 const todayDay = date.getDate();
 let todayMonth = date.getMonth();
-// todayMonth = todayMonth + 1;
+todayMonth = todayMonth + 1;
 let totalMonth, totalDay, totalYear;
 console.log(todayMonth);
 const todayYear = date.getFullYear();
@@ -26,44 +26,54 @@ const button = document.querySelector('button'); //находим кнопку
 for (const input of inputs) { 
   console.log(input);
   button.addEventListener('click', function() {
-    
+    if (validation(form) == true) {
+      if (daysInput.value>todayDay) {
+        totalMonth = totalMonth+1;
+      }
 
-    if (daysInput.value>todayDay) {
-      totalMonth = totalMonth+1;
-    }
+      if (daysInput.value<=todayDay) {
+        totalDay = parseInt(todayDay) - parseInt(daysInput.value);
+      }
+      else {
+        totalDay = 31 - parseInt(daysInput.value) + parseInt(todayDay);
+        console.log(totalDay);
+      }
 
-    if (daysInput.value<=todayDay) {
-      totalDay = parseInt(todayDay) - parseInt(daysInput.value);
-    }
-    else {
-      totalDay = 31 - parseInt(daysInput.value) + parseInt(todayDay);
-      console.log(totalDay);
-    }
+      if (daysInput.value==todayDay && monthsInput.value==(todayMonth+1)) {
+        totalDay = 0;
+        totalMonth = 0;
+        totalYear = todayYear - yearsInput.value;
+      }
+      else if (monthsInput.value<=todayMonth) {
+        totalMonth = parseInt(todayMonth) - parseInt(monthsInput.value);
+      }
+      else {
+        totalMonth = 12 - parseInt(monthsInput.value) + parseInt(todayMonth);
+      }
 
-    if (daysInput.value==todayDay & monthsInput.value==(todayMonth+1)) {
-      totalDay = 0;
-      totalMonth = 0;
-    }
-    else if (monthsInput.value<=todayMonth) {
-      totalMonth = parseInt(todayMonth) - parseInt(monthsInput.value);
-    }
-    else {
-      totalMonth = 12 - parseInt(monthsInput.value) + parseInt(todayMonth);
-    }
+      totalYear = todayYear - yearsInput.value; //год седня - год рождения
 
-    
-    totalDayElement.innerText = totalDay;
-    totalMonthElement.innerText = totalMonth;
+      if (daysInput.value>todayDay && monthsInput.value>=todayMonth || 
+        monthsInput.value>todayMonth) {
+        totalYear = totalYear-1;
+      }
 
-    totalYear = todayYear - yearsInput.value; //год седня - год рождения
+      if (monthsInput.value==todayMonth && daysInput.value > todayDay ) {
+        totalMonth = 11;
+      }
 
-    if (daysInput.value>todayDay & monthsInput.value>=todayMonth || 
-      monthsInput.value>todayMonth) {
-      totalYear = totalYear-1;
+      if (monthsInput.value>todayMonth && daysInput.value==todayDay) {
+        totalMonth = todayMonth+1;
+      }
+      
+      if (daysInput.value>todayDay && monthsInput.value>todayMonth) {
+        totalMonth = totalMonth - 1;
+      }
+
+      totalDayElement.innerText = totalDay;
+      totalMonthElement.innerText = totalMonth;
+      totalYearElement.innerText = totalYear; //меняет -- на посчит. значение
     }
-    totalYearElement.innerText = totalYear; //меняет -- на посчит. значение
-
-    
   })
 }
 
@@ -137,7 +147,7 @@ function validation(form) {
 
       if (input.value > 2023 || input.value < 1) {
         console.log('Ошибка поля');
-        createError(input, `Укажите от 0 до ${todayYear}`)
+        createError(input, `Укажите от 1 до ${todayYear}`)
         result = false
       }
     }
@@ -159,3 +169,4 @@ document.getElementById('add-form').addEventListener('input', function(event){
     console.log('Валидация пройдена!')
   }
 })
+
