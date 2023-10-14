@@ -110,9 +110,9 @@ function validation(form) {
     removeError(input)
 
     if (input.dataset.maxLength) {
-      removeError(input)
 
       if (input.value.length > input.dataset.maxLength) {
+        removeError(input)
         console.log('Ошибка поля');
         createError(input, `Максимальное кол-во символов: ${input.dataset.maxLength}`)
         result = false
@@ -120,9 +120,9 @@ function validation(form) {
     }
 
     if (input.dataset.maxDays) {
-      removeError(input)
 
       if (input.value > 31 || input.value < 1) {
+        removeError(input)
         console.log('Ошибка поля день');
         createError(input, `Укажите от 1 до ${input.dataset.maxDays}`)
         result = false
@@ -130,9 +130,9 @@ function validation(form) {
     }
 
     if (input.dataset.maxMonths) {
-      removeError(input)
 
       if (input.value > 12 || input.value < 1) {
+        removeError(input)
         console.log('Ошибка поля месяц');
         createError(input, `Укажите от 1 до ${input.dataset.maxMonths}`)
         result = false
@@ -140,9 +140,9 @@ function validation(form) {
     }
 
     if (input.dataset.maxYears) {
-      removeError(input)
 
       if (input.value > todayYear || input.value < 1) {
+        removeError(input)
         console.log('Ошибка поля год');
         createError(input, `Укажите от 1 до ${todayYear}`)
         result = false
@@ -166,11 +166,11 @@ function validation(form) {
 }
 
 
-
-document.getElementById('add-form').addEventListener('input', function(event){
-  // event.preventDefault()
-  if (validation(this) == true) {
-    console.log('Валидация пройдена!')
-  }
-})
+//обработчик события input, который выполняет валидацию в реальном времени:
+// document.getElementById('add-form').addEventListener('input', function(event){
+//   // event.preventDefault()
+//   if (validation(this) == true) {
+//     console.log('Валидация пройдена!')
+//   }
+// })
 
