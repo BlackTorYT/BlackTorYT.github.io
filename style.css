@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: antiquewhite
+}
+
 .calc {
   display: flex;
   justify-content: center;

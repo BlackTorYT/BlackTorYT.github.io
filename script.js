@@ -166,7 +166,7 @@ function validation(form) {
 }
 
 
-//обработчик события input, который выполняет валидацию в реальном времени:
+//обработчик события input, который выполняет валидацию в реальном времени
 // document.getElementById('add-form').addEventListener('input', function(event){
 //   // event.preventDefault()
 //   if (validation(this) == true) {
