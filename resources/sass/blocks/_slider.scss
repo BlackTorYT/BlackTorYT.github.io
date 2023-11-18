@@ -11,7 +11,7 @@
   @media screen and (max-width: 750px) {
     border-radius: 30px;
     background: linear-gradient(105deg, rgba(70, 163, 88, 0.20) 1.08%, rgba(70, 163, 88, 0.10) 99.23%);
-    // max-width: 1328px;
+    overflow: visible;
   }
   
 }
@@ -20,6 +20,9 @@
 
     width: 1200px;
     height: 100%;
+    @media screen and (max-width: 750px) {
+      width: 100%;
+    }
 }
 .slider-slide {
   width: 100%;

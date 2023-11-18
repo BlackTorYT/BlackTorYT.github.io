@@ -1,3 +1,7 @@
+.navigation__menu {
+  display: none;
+}
+
 @media screen and (max-width: 750px) {
   .navigation__menu {
     position: fixed;
@@ -12,6 +16,8 @@
     // background-size: 100% 100%;
     // background-size: 30px 40px;
   }
+
+
 
   .navigation__img {
     position: fixed;

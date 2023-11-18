@@ -400,6 +400,7 @@ a {
   .slider {
     border-radius: 30px;
     background: linear-gradient(105deg, rgba(70, 163, 88, 0.2) 1.08%, rgba(70, 163, 88, 0.1) 99.23%);
+    overflow: visible;
   }
 }
 
@@ -407,6 +408,11 @@ a {
   position: relative;
   width: 1200px;
   height: 100%;
+}
+@media screen and (max-width: 750px) {
+  .slider-slides {
+    width: 100%;
+  }
 }
 
 .slider-slide {
@@ -1447,6 +1453,10 @@ a {
 .pages__button_active {
   color: white;
   background-color: #46A358;
+}
+
+.navigation__menu {
+  display: none;
 }
 
 @media screen and (max-width: 750px) {
