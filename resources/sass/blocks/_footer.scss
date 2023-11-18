@@ -24,6 +24,7 @@
 
   @media screen and (max-width: 750px) {
     height: 98px;
+    width: 100%;
     }
 }
 
@@ -160,6 +161,7 @@
 
   @media screen and (max-width: 750px) {
     margin-bottom: 10px;
+    width: 100%;
     }
 }
 
@@ -210,7 +212,7 @@
   }
 
   @media screen and (max-width: 750px) {
-    font-size: 36px;
+    font-size: 26px;
     margin-bottom: 5px;
     text-align: center;
     }
@@ -268,8 +270,8 @@
   outline: none;
 
   @media screen and (max-width: 999px) {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -280,8 +282,8 @@
     }
 
     @media screen and (max-width: 750px) {
-      width: 35px;
-      height: 35px;
+      width: 25px;
+      height: 25px;
       }
 }
 
@@ -326,7 +328,7 @@
     }
 
     @media screen and (max-width: 750px) {
-      font-size: 26px;
+      font-size: 16px;
       }
 }
 
