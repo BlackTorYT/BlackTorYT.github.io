@@ -596,6 +596,7 @@ a {
   max-width: 1200px;
   width: 100%;
   margin-top: 32px;
+  margin-left: -20px;
 }
 
 .footer__container {
@@ -973,7 +974,7 @@ a {
 }
 
 .footer__copyright {
-  height: 111px;
+  height: 150px;
   padding-top: 5px;
 }
 
@@ -1281,6 +1282,17 @@ a {
 @media screen and (max-width: 750px) {
   .catalog__sort {
     font-size: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 60%;
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .catalog__sortBy {
+    display: none;
   }
 }
 
@@ -1322,6 +1334,7 @@ a {
     max-width: 295px;
     max-height: 323px;
     height: 50%;
+    border-radius: 20px;
   }
 }
 
@@ -1359,7 +1372,6 @@ a {
 }
 @media screen and (max-width: 750px) {
   .catalog__item {
-    background-color: #FBFBFB;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1368,6 +1380,12 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 45%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .catalog__item-bottom {
+    padding-top: 50px;
   }
 }
 
@@ -1398,6 +1416,64 @@ a {
 @media screen and (max-width: 999px) {
   .catalag__item_cut {
     display: none;
+  }
+}
+
+.catalog__plants_active {
+  display: none;
+}
+@media screen and (max-width: 750px) {
+  .catalog__plants_active {
+    display: block;
+    color: #46A358;
+    font-family: Cera Pro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px; /* 114.286% */
+    width: 63px;
+  }
+}
+
+.catalog__plants_active::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #46A358;
+  bottom: 0;
+  display: block;
+  top: -10px;
+}
+
+.catalog__plants_arrivals {
+  display: none;
+}
+@media screen and (max-width: 750px) {
+  .catalog__plants_arrivals {
+    display: block;
+    color: #3D3D3D;
+    font-family: Cera Pro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 114.286% */
+    width: 83px;
+  }
+}
+
+.catalog__plants_sale {
+  display: none;
+}
+@media screen and (max-width: 750px) {
+  .catalog__plants_sale {
+    display: block;
+    color: #3D3D3D;
+    font-family: Cera Pro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 114.286% */
+    width: 27px;
   }
 }
 
