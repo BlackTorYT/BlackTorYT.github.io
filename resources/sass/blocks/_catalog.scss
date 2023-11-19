@@ -112,8 +112,22 @@
     background-color: #FBFBFB;
     display: flex;
     flex-direction: column;
-    // padding-top: 31px;
-    // height: 45%;
+    width: 45%;
+  }
+}
+
+
+.catalog__item_container {
+  background-color:#46A358;
+  display: block;
+
+  width: 254px;
+  height: 319px;
+
+  @media screen and (max-width: 750px) {
+    background-color: #FBFBFB;
+    display: flex;
+    flex-direction: column;
     width: 45%;
   }
 }
