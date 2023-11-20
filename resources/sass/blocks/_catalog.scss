@@ -27,7 +27,7 @@
   @media screen and (max-width: 750px) {
     font-size: 18px;
     display: flex;
-    width: 60%;
+    width: 76%;
     gap: 30px;
     // justify-content: space-between;
   }
@@ -77,6 +77,14 @@
   }
 }
 
+
+.catalog__img_container {
+  // background-color: red;
+  // width: 50px;
+  // aspect-ratio: 1/1;
+  // display: block;
+  // height: auto;
+}
 // .catalog__img4 {
 //   @media screen and (max-width: 750px) {
 //     max-width: 250px;

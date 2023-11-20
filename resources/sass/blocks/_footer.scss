@@ -1,9 +1,13 @@
 .footer {
   max-width: 1200px;
-  width: 100%;
+  width: 105%;
   //height: 361px;
   margin-top: 32px;
   margin-left: -20px;
+
+  @media screen and (max-width: 750px) {
+    margin-left: 0px;
+    }
 }
 .footer__container {
   //height: 361px;
@@ -252,12 +256,13 @@
 
   @media screen and (max-width: 999px) {
     width: 820px;
-    flex-direction: column;
     justify-content: space-between;
     margin-left: 10%;
+    flex-direction: row;
   }
   @media screen and (max-width: 750px) {
     width: 80%;
+    flex-direction: column;
   }
 }
 
@@ -330,9 +335,12 @@
 }
 
 .footer__copyright {
-  height: 150px;
-
+  height: 45px;
   padding-top: 5px;
+
+  @media screen and (max-width: 750px) {
+    height: 150px;
+    }
 }
 
 .footer__copyright span {
