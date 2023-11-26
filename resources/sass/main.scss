@@ -3,6 +3,8 @@
 @import './base/variables'; 
 @import './base/base';
 
+//Fonts
+@import url('stylesheet.css');
 
 //Blocks
 @import './blocks/header';
@@ -13,4 +15,8 @@
 @import './blocks/catalog';
 @import './blocks/pages';
 @import './blocks/navigation';
+@import './blocks/search';
 
+@import './blocks/product_view/description';
+@import './blocks/product_view/releted';
+@import './blocks/product_view/product';
