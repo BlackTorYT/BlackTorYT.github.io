@@ -20,6 +20,9 @@
   @media screen and (max-width: 750px) {
     display: none;
   }
+  @media screen and (max-width: 999px) {
+    font-size: 17px;
+  }
 }
 
 .product h2 span {
@@ -31,6 +34,9 @@
   line-height: 16px;
   @media screen and (max-width: 750px) {
     display: none;
+  }
+  @media screen and (max-width: 999px) {
+    font-size: 17px;
   }
 }
 
@@ -397,7 +403,7 @@
       height: 164px;
       border-radius: 40px 40px 0px 0px;
       background: #FFF;
-      box-shadow: 0px 0px 20px 0px rgba(205, 205, 205, 0.30);
+      box-shadow: 0px 0px 20px 0px rgba(205, 205, 205, 0.40);
 
     }
 }
