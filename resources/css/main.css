@@ -2550,6 +2550,13 @@ a {
   height: 843px;
   margin-top: 36px;
   margin-bottom: 276px;
+  max-width: 1200px;
+}
+@media screen and (max-width: 750px) {
+  .bill {
+    width: 100%;
+    margin-bottom: 1300px;
+  }
 }
 
 .bill h2 {
@@ -2560,6 +2567,11 @@ a {
   font-weight: 400;
   line-height: 16px;
   margin-bottom: 36px;
+}
+@media screen and (max-width: 750px) {
+  .bill h2 {
+    width: 100%;
+  }
 }
 
 .bill h2 span {
@@ -2572,7 +2584,7 @@ a {
 }
 
 .bill__title {
-  width: 883px;
+  width: 866px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2587,27 +2599,54 @@ a {
   line-height: 16px; /* 94.118% */
   margin-bottom: 21px;
 }
+@media screen and (max-width: 750px) {
+  .bill__title {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #bill__order {
+    display: none;
+  }
+}
 
 .bill__block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
+@media screen and (max-width: 750px) {
+  .bill__block {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 
 .billAddress__container {
-  width: 722px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 94%;
 }
 
 .billAddress__block {
   margin-bottom: 30px;
   height: 65px;
-  width: 350px;
+  width: 44%;
+}
+@media screen and (max-width: 750px) {
+  .billAddress__block {
+    width: 100%;
+  }
 }
 
 .billAddress__block h4 {
@@ -2625,7 +2664,7 @@ a {
 
 .billAddress-field__input {
   display: block;
-  width: 350px;
+  width: 100%;
   height: 40px;
   margin: 0;
   padding: 0.375rem 0.75rem;
@@ -2642,11 +2681,6 @@ a {
   transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-}
-
-#billAddress-field__input-empty {
-  margin-top: 59px;
-  margin-bottom: 0px;
 }
 
 .billAddress-field__input_notes {
@@ -2703,24 +2737,62 @@ a {
   line-height: 16px; /* 106.667% */
 }
 
+@media screen and (max-width: 750px) {
+  .billOrder {
+    width: 100%;
+    margin-top: 128px;
+  }
+}
+
+.billOrder__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .billOrder__headline {
   width: 405px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+}
+@media screen and (max-width: 750px) {
+  .billOrder__headline {
+    width: 100%;
+  }
 }
 
-.billOrder__headline_title {
-  width: 132px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+@media screen and (max-width: 750px) {
+  .billOrder__headline h3 {
+    width: 18%;
+  }
+}
+
+.billOrder__headline_qty {
+  margin-left: 205px;
+  margin-right: 47px;
+}
+@media screen and (max-width: 750px) {
+  .billOrder__headline_qty {
+    width: 14%;
+    margin-right: 0;
+    margin-left: 40%;
+    text-align: right;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .billOrder__headline_sub {
+    width: 27%;
+    text-align: right;
+  }
 }
 
 .billOrder__headline span {
@@ -2735,6 +2807,11 @@ a {
   height: 0.3px;
   background: rgba(70, 163, 88, 0.5);
 }
+@media screen and (max-width: 750px) {
+  .billOrder__line {
+    width: 100%;
+  }
+}
 
 .billOrder__item {
   display: -webkit-box;
@@ -2747,9 +2824,20 @@ a {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 750px) {
+  .billOrder__item {
+    width: 100%;
+  }
+}
 
 .billOrder__item_img {
   margin-right: 11px;
+}
+@media screen and (max-width: 750px) {
+  .billOrder__item_img {
+    margin-right: 0;
+    width: 20%;
+  }
 }
 
 .billOrder__item_img img {
@@ -2760,6 +2848,12 @@ a {
 .billOrder__item_title {
   margin-right: 47px;
   width: 144px;
+}
+@media screen and (max-width: 750px) {
+  .billOrder__item_title {
+    width: 38%;
+    margin-right: 0;
+  }
 }
 
 .billOrder__item_title span {
@@ -2803,6 +2897,12 @@ a {
   line-height: 16px; /* 114.286% */
   margin-right: 47px;
 }
+@media screen and (max-width: 750px) {
+  .billOrder__item_qty {
+    width: 14%;
+    margin-right: 0;
+  }
+}
 
 .billOrder__item_price {
   color: #46A358;
@@ -2812,6 +2912,11 @@ a {
   font-style: normal;
   font-weight: 700;
   line-height: 16px; /* 88.889% */
+}
+@media screen and (max-width: 750px) {
+  .billOrder__item_price {
+    width: 27%;
+  }
 }
 
 .billOrder__coupone {
@@ -2823,6 +2928,13 @@ a {
   font-weight: 400;
   line-height: 16px; /* 114.286% */
   margin-bottom: 19px;
+  padding-left: 230px;
+}
+@media screen and (max-width: 750px) {
+  .billOrder__coupone {
+    width: 100%;
+    padding-left: 0;
+  }
 }
 
 .billOrder__coupone span {
@@ -2841,6 +2953,7 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: 16px; /* 106.667% */
+  width: 100%;
 }
 
 .billOrder__subtotal {
@@ -2852,6 +2965,11 @@ a {
           justify-content: space-between;
   padding-left: 84px;
   margin-bottom: 15px;
+}
+@media screen and (max-width: 750px) {
+  .billOrder__subtotal {
+    padding-left: 0;
+  }
 }
 
 .billOrder__subtotal span {
@@ -2874,6 +2992,11 @@ a {
   padding-left: 84px;
   margin-bottom: 21px;
 }
+@media screen and (max-width: 750px) {
+  .billOrder__discount {
+    padding-left: 0;
+  }
+}
 
 .billOrder__shiping {
   display: -webkit-box;
@@ -2884,6 +3007,11 @@ a {
           justify-content: space-between;
   padding-left: 84px;
   margin-bottom: 8px;
+}
+@media screen and (max-width: 750px) {
+  .billOrder__shiping {
+    padding-left: 0;
+  }
 }
 
 .billOrder__shiping span {
@@ -2903,8 +3031,13 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: 16px; /* 133.333% */
-  padding-left: 311px;
+  padding-left: 310px;
   margin-bottom: 17px;
+}
+@media screen and (max-width: 750px) {
+  .billOrder__charge {
+    display: none;
+  }
 }
 
 .billOrder__check_line {
@@ -2913,6 +3046,12 @@ a {
   background: rgba(70, 163, 88, 0.5);
   margin-bottom: 16px;
   margin-left: 84px;
+}
+@media screen and (max-width: 750px) {
+  .billOrder__check_line {
+    margin-left: 0;
+    width: 100%;
+  }
 }
 
 .billOrder__total {
@@ -2930,6 +3069,11 @@ a {
           justify-content: space-between;
   padding-left: 84px;
   margin-bottom: 47px;
+}
+@media screen and (max-width: 750px) {
+  .billOrder__total {
+    padding-left: 0;
+  }
 }
 
 .billOrder__total span {
@@ -2952,12 +3096,29 @@ a {
   padding-left: 84px;
   margin-bottom: 19px;
 }
+@media screen and (max-width: 750px) {
+  .billOrder__method {
+    padding-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 
 .billOrder__payment {
   width: 321px;
   height: 45px;
   border-radius: 3px;
   border: 1px solid #EAEAEA;
+  margin: 0 auto 0 auto;
+}
+@media screen and (max-width: 750px) {
+  .billOrder__payment {
+    padding-left: 0 auto 0 auto;
+  }
 }
 
 .billOrder__checkbox {
@@ -2984,6 +3145,11 @@ a {
 .billOrder__payment {
   margin-left: 84px;
 }
+@media screen and (max-width: 750px) {
+  .billOrder__payment {
+    margin: 0 auto;
+  }
+}
 
 .billOrder__payment img {
   margin-top: 11px;
@@ -3000,6 +3166,11 @@ a {
   display: flex;
   margin-left: 84px;
   margin-top: 31px;
+}
+@media screen and (max-width: 750px) {
+  .billOrder__cash {
+    margin: 31px auto 0 auto;
+  }
 }
 
 .billOrder__cash span {
@@ -3026,4 +3197,49 @@ a {
   line-height: 16px; /* 106.667% */
   margin-top: 49px;
   margin-left: 84px;
+}
+@media screen and (max-width: 750px) {
+  .billOrder-button {
+    margin-left: 0;
+  }
+}
+
+.billOrder__place {
+  width: 321px;
+}
+@media screen and (max-width: 750px) {
+  .billOrder__place {
+    margin: 0 auto 0 auto;
+  }
+}
+
+.title {
+  display: none;
+}
+@media screen and (max-width: 750px) {
+  .title {
+    margin-top: 42px;
+    display: block;
+  }
+}
+
+.title__container {
+  display: none;
+}
+@media screen and (max-width: 750px) {
+  .title__container {
+    color: #3D3D3D;
+    font-family: Cera Pro;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px; /* 80% */
+    display: block;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .footer__copyright {
+    height: 100px;
+  }
 }
