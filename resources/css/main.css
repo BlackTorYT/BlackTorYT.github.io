@@ -3468,6 +3468,7 @@ a {
   .login-mobile {
     display: block;
     width: 100%;
+    background: white;
   }
 }
 
@@ -3905,6 +3906,7 @@ a {
   .register-mobile {
     display: block;
     width: 100%;
+    background: white;
   }
 }
 
