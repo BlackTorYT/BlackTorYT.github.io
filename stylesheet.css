@@ -1,0 +1,509 @@
+/* Reset and base styles  */
+@import url("stylesheet.css");
+* {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Links */
+a, a:link, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input, textarea, button, select {
+  color: inherit;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  cursor: pointer;
+  background: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+body {
+  font-family: "Cera Pro", sans-serif;
+}
+
+body, html {
+  margin: 0 auto;
+  min-height: -webkit-min-content;
+  min-height: -moz-min-content;
+  min-height: min-content;
+  min-width: -webkit-min-content;
+  min-width: -moz-min-content;
+  min-width: min-content;
+}
+
+
+/* FOOTER */
+.footer {
+  width: 100%; 
+  height: 731px;
+  max-width: 1920px; 
+  /* position: relative; */
+  background-color: #2C2C2C;
+  margin: 0 auto;
+}
+
+.footer__block {
+  height: 731px;
+  /* width: 1530px; */
+  padding: 60px 330px 60px 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__content {
+  height: 611px;
+}
+
+
+.footer__text {
+position: static;
+width: 530px;
+height: 96px;
+/* Автолейаут */
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+padding: 0px;
+
+
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 24px 0px;
+
+/* Samibold 37px */
+color: rgb(255, 255, 255);
+font-family: SF Pro Display;
+font-size: 37px;
+font-weight: 600;
+line-height: 130%;
+letter-spacing: 0%;
+text-align: left;
+text-transform: uppercase;
+}
+
+.footer__number {
+  width: 312px;
+  height: 48px;
+  margin: 24px 0px;
+  /* color: rgb(52, 63, 193); */
+  font-family: SF Pro Display;
+  font-size: 37px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.footer__bracket {
+  color: rgb(52, 63, 193);
+  font-family: SF Pro Display;
+  font-size: 37px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.footer__phoneLink {
+  text-decoration: none;
+  color: #fcfcfc;
+}
+
+.footer__address {
+  width: 230px;
+  height: 69px;
+  margin-bottom: 46px;
+  color: rgb(255, 255, 255);
+  font-family: SF Pro Display;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.footer__socials {
+  width: 566px;
+  height: 60px;
+  display: flex;
+  margin-bottom: 46px;
+}
+
+.footer__socials-left {
+  width: 743px;
+  height: 611px;
+  margin-right: 94px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.footer__socials_item {
+  width: 35px;
+  height: 35px;
+  margin-top: 12.5px;
+}
+
+.footer__socials-right {
+  width: 193px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__vlruLogo {
+  width: 114px;
+  height: 60px;
+  margin-right: 8.5px;
+}
+
+.footer__rate {
+  width: 72px;
+  height: 59px;
+  margin-left: 7px;
+}
+
+.footer__rate_text {
+  margin-bottom: 8.5px;
+  color: rgb(255, 255, 255);
+  font-family: SF Pro Display;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.footer__rate_stars {
+  width: 71px;
+  height: 9px;
+  margin-bottom: 8px;
+}
+
+.footer__rate_reviews {
+  color: rgb(224, 224, 224);
+  font-family: SF Pro Display;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.footer__bottom {
+  width: 743px;
+  height: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.footer__bottom_item {
+  color: rgb(255, 255, 255);
+  font-family: SF Pro Display;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.footer__bottom_item a {
+  color: white;
+}
+
+
+.footer__right {
+  width: 494px;
+  height: 391px;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 17px;
+}
+
+.footer__catalog {
+  width: 494px;
+  height: 297px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__column_text {
+  color: rgb(255, 255, 255);
+  font-family: SF Pro Display;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 36px;
+}
+
+.footer__column_text a {
+  color: white;
+}
+
+.footer__column_item {
+  color: rgb(255, 255, 255);
+  font-family: SF Pro Display;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.footer__column_item a {
+  color:white;
+}
+
+.footer__review {
+  margin-top: 60px;
+}
+
+.footer__review h5 {
+  color: rgb(255, 255, 255);
+  font-family: SF Pro Display;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.footer__review_sites {
+  width: 268px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* HEADER */
+.header {
+  width: 100%; 
+  height: 169px;
+  max-width: 1920px; 
+  /* position: relative; */
+  margin: 0 auto;
+  background-color: rgb(97, 92, 86);
+}
+
+.header__block {
+  padding: 32px 60px 32px 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__nav {
+  width: 42%;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__item {
+  color: rgb(255, 255, 255);
+  font-family: SF Pro Display;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.nav__item a {
+  color: white;
+}
+
+.nav__item:hover {
+  border-radius: 30px;
+  background: rgb(52, 63, 193);
+  width: 130px;
+  transition: all 0.25s ease-in-out 0s;
+
+}
+
+
+.header__right {
+  width: 404px;
+  height: 105px;
+}
+
+.header__currency {
+  width: 100%;
+  height: 37px;
+  box-sizing: border-box;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 4px; 
+  background: rgba(255, 255, 255, 0.06);
+  display: flex;
+  margin-bottom: 14px;
+}
+
+.header__currency-block {
+  width: 100%;
+  display: flex;
+  padding: 8px 12px;
+}
+
+.header__dollar {
+  margin-right: 13px;
+}
+
+.header__currency_text {
+  margin-right: 82px;
+  color: rgb(255, 255, 255);
+  font-family: SF Pro Display;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.header__currency_exchangeRate {
+  margin-right: 10px;
+  color: rgb(255, 255, 255);
+  font-family: SF Pro Display;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.header__arrow {
+  padding-top: 3.5px;
+}
+
+.header__contacts {
+  width: 100%;
+  height: 54px;
+  display: flex;
+}
+
+.header__call {
+  margin-right: 15px;
+}
+
+.header__number {
+  color: rgb(255, 255, 255);
+  font-family: SF Pro Display;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-align: left;
+}
+
+.header__number a {
+  color: rgb(255, 255, 255);
+  font-family: SF Pro Display;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-align: left;
+}
+
+.header__call p {
+  float: right;
+  color: rgb(255, 255, 255);
+  font-family: SF Pro Display;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-top: 6px;
+}
+
+.header__line {
+  margin-right: 21px;
+}
+
+.header__socials {
+  display: flex;
+  width: 153px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: auto;
+}
