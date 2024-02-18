@@ -223,7 +223,7 @@ text-transform: uppercase;
 }
 
 .footer__number {
-  width: 312px;
+  width: 322px;
   height: 48px;
   margin: 24px 0px;
   /* color: rgb(52, 63, 193); */
@@ -560,7 +560,18 @@ text-transform: uppercase;
 .burger {
   background-color: #2C2C2C;
   display: none;
+  overflow: hidden;
+  height: 87vh; /* Примерная фиксированная высота */
+  overflow-y: auto; 
 }
+
+/* .burger__container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+} */
 
 .burger__top {
   display: flex;
