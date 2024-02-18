@@ -133,6 +133,7 @@ body, html {
   .footer {
     display: flex;
     justify-content: center;
+    flex-direction: column;
   }
 }
 
@@ -151,9 +152,13 @@ body, html {
   }
 }
 
-/* .footer__content {
-  height: 611px;
-} */
+
+#footer__block-header {
+  padding-top: 0px;
+}
+
+
+
 
 @media screen and (max-width: 1000px) {
   .footer__logo {
@@ -466,17 +471,33 @@ text-transform: uppercase;
   color:white;
 }
 
+
+
 .footer__blueLine {
   display: hidden;
 }
 
 @media screen and (max-width: 1000px) {
   .footer__blueLine {
-    display: block;
+    display: none;
     width: 127%;
     background: rgb(52, 63, 193);
     height: 116px;
     margin-left: -30px;
+  }
+}
+
+.footer__blueLine-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .footer__blueLine-mobile {
+    display: block;
+    width: 100%;
+    background: rgb(52, 63, 193);
+    height: 116px;
+    /* margin-left: -30px; */
   }
 }
 
