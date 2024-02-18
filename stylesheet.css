@@ -126,6 +126,7 @@ body, html {
   /* position: relative; */
   background-color: #2C2C2C;
   margin: 0 auto;
+  
 }
 
 @media screen and (max-width: 1000px) {
@@ -162,7 +163,7 @@ body, html {
 
 .footer__text {
 position: static;
-width: 530px;
+width: 504px;
 height: 96px;
 /* Автолейаут */
 display: flex;
@@ -223,7 +224,7 @@ text-transform: uppercase;
 }
 
 .footer__number {
-  width: 322px;
+  width: 345px;
   height: 48px;
   margin: 24px 0px;
   /* color: rgb(52, 63, 193); */
@@ -260,8 +261,7 @@ text-transform: uppercase;
 }
 
 .footer__address {
-  width: 219px;
-  /* height: 69px; */
+  width: 230px;
   margin-bottom: 46px;
   color: rgb(255, 255, 255);
   font-family: SF Pro Display;
@@ -274,7 +274,7 @@ text-transform: uppercase;
 
 @media screen and (max-width: 1000px) {
   .footer__address {
-  width: 252px;
+  width: 264px;
   margin-bottom: 26px;
   color: rgb(255, 255, 255);
   font-family: SF Pro Display;
@@ -569,6 +569,7 @@ text-transform: uppercase;
   overflow-y: scroll;
   height: max-content;
   position: absolute;
+  width: 100%;
 }
 
 .burger__container {
@@ -598,6 +599,13 @@ text-transform: uppercase;
 
 #footer__blueline-header {
   margin-bottom: 41px;
+  margin-left: 0;
+  width: 100%;
+}
+
+#footer-header {
+  display: flex;
+  flex-direction: column;
 }
 
 #header__arrow {
@@ -615,7 +623,7 @@ text-transform: uppercase;
 }
 
 .header__nav {
-  width: 42%;
+  width: 46%;
   padding: 40px;
 }
 
@@ -677,7 +685,7 @@ text-transform: uppercase;
 
 
 .header__right {
-  width: 404px;
+  width: 421px;
   height: 105px;
 }
 
@@ -703,7 +711,7 @@ text-transform: uppercase;
 }
 
 .header__currency_text {
-  margin-right: 82px;
+  margin-right: 74px;
   color: rgb(255, 255, 255);
   font-family: SF Pro Display;
   font-size: 14px;
@@ -734,9 +742,6 @@ text-transform: uppercase;
   display: flex;
 }
 
-.header__call {
-  margin-right: 15px;
-}
 
 .header__number {
   color: rgb(255, 255, 255);
@@ -771,12 +776,13 @@ text-transform: uppercase;
 }
 
 .header__line {
-  margin-right: 21px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .header__socials {
   display: flex;
-  width: 153px;
+  width: 127px;
   justify-content: space-between;
   align-items: center;
   margin-bottom: auto;
