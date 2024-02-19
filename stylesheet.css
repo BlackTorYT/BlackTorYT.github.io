@@ -174,7 +174,19 @@ html {
   gap: 22px;
 }
 
+
+
 .burger__text a {
+  color: rgb(255, 255, 255);
+  font-family: SF Pro Display;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+#burger__text-arrow {
   color: rgb(255, 255, 255);
   font-family: SF Pro Display;
   font-size: 28px;
@@ -331,6 +343,44 @@ background: rgb(52, 63, 193);
   justify-content: space-between;
 }
 
+.nav__popup {
+  display: none;
+}
+
+.nav__popup {
+  top: 100%;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  padding: 10px;
+  transition: opacity 0.3s ease, visibility 0.3s ease, dispaly 0.3 ease; /* Добавляем плавную анимацию */
+}
+
+.nav__item:hover .nav__popup {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.nav__popup-mobile {
+  display: none;
+}
+
+.nav__popup-mobile {
+  top: 100%;
+  left: 0;
+  /* visibility: hidden; */
+  opacity: 0;
+  padding: 10px;
+  transition: opacity 0.3s ease, visibility 0.3s ease, dispaly 0.3 ease; /* Добавляем плавную анимацию */
+}
+
+.rotated {
+  transform: rotate(180deg);
+}
+
+
+
 .nav__item {
   color: rgb(255, 255, 255);
   font-family: SF Pro Display;
@@ -368,6 +418,20 @@ background: rgb(52, 63, 193);
   content: '';
   position: absolute;
   top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% + 20px); 
+  height: 40px;
+  background-color: rgb(52, 63, 193);
+  border-radius: 20px;
+  z-index: -1;
+  animation: navItemHover 0.45s ease;
+}
+
+#nav__item-popup:hover::before {
+  content: '';
+  position: absolute;
+  top: 12%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: calc(100% + 20px); 
@@ -462,6 +526,8 @@ background: rgb(52, 63, 193);
   margin-right: 20px;
   margin-left: 20px;
 }
+
+
 
 @media screen and (max-width: 1639px) {
   .header__line {
