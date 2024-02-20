@@ -10,17 +10,17 @@ burgerBtn.addEventListener('click', function() {
 });
 
 
-const fifthNavItem = document.querySelector('.nav__item:nth-child(5)'); 
+// const fifthNavItem = document.querySelector('.nav__item:nth-child(5)'); 
 
-fifthNavItem.addEventListener('mouseenter', function() {
-  const popupMenu = this.querySelector('.nav__popup');
-  popupMenu.style.display = 'block';
-});
+// fifthNavItem.addEventListener('mouseenter', function() {
+//   const popupMenu = this.querySelector('.nav__popup');
+//   popupMenu.classList.add('is-active');
+// });
 
-fifthNavItem.addEventListener('mouseleave', function() {
-  const popupMenu = this.querySelector('.nav__popup');
-  popupMenu.style.display = 'none';
-});
+// fifthNavItem.addEventListener('mouseleave', function() {
+//   const popupMenu = this.querySelector('.nav__popup');
+//   popupMenu.classList.remove('is-active');
+// });
 
 
 
@@ -41,3 +41,4 @@ const burgerTextArrow = document.getElementById('burger__text-arrow');
 burgerTextArrow.addEventListener('click', function() {
   headerArrow.classList.toggle('rotated');
 });
+
